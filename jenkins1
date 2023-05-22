@@ -5,6 +5,7 @@ pipeline {
      steps {
         echo 'Hello world!'
         echo 'New change label  '
+        echo '$var_email'
            }
         }
     }
