@@ -4,8 +4,7 @@ pipeline {
      stage ('Stage 1'){
      steps {
         echo 'Hello world!'
-        echo 'New change label  '
-        echo " email ${ env.var_email)"
+                echo "email ${ env.var_email)"
            }
         }
     }
