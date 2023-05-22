@@ -6,7 +6,7 @@ pipeline {
     
         echo 'Hello world!'
         echo 'node1'
-           echo 'email ${ env.var_email)'
+           echo  ${ env.var_email)
            }
         }
     }
