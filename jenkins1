@@ -3,8 +3,9 @@ pipeline {
     stages {
      stage ('Stage 1'){
      steps {
-     echo $var_email
+    
         echo 'Hello world!'
+        echo 'node1'
               
            }
         }
