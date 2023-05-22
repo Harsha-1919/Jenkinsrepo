@@ -4,7 +4,7 @@ pipeline {
      stage ('Stage 1'){
      steps {
         echo 'Hello world!'
-        echo 'change from node1 '
+        echo 'New change label  '
            }
         }
     }
