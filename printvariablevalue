@@ -13,6 +13,7 @@ pipeline {
 	 //  echo "env.BUILD_NUMBER"
 	 
 	 echo " Username is ${env.USER}"
+	 echo "Username is ${env.BUILD_USER_ID}"
 	// echo "The ${JOB_NAME} run on ${NODE_NAME}"
 	// echo "BUILD_TRIGGER_BY: ${BUILD_TRIGGER_BY}"
         
