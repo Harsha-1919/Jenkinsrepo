@@ -12,7 +12,7 @@ pipeline {
 	 //  echo "env.BUILD_NUMBER"
 	 
 	// echo " Username is ${env.USERNAME}"
-	 sh 'echo "The ${JOB_NAME} run on ${NODE_NAME}"'
+	 echo "The ${JOB_NAME} run on ${NODE_NAME}"
 	 echo "BUILD_TRIGGER_BY: ${BUILD_TRIGGER_BY}"
          echo " email ${var_email}"
     
