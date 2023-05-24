@@ -9,12 +9,13 @@ pipeline {
             echo "BUILD_NUMBER AS BELOW "
             echo "Build number is ${currentBuild.number}"
 	   echo 'node1'
+	    echo " email ${var_email}"
 	 //  echo "env.BUILD_NUMBER"
 	 
 	 echo " Username is ${env.USERNAME}"
 	// echo "The ${JOB_NAME} run on ${NODE_NAME}"
 	// echo "BUILD_TRIGGER_BY: ${BUILD_TRIGGER_BY}"
-         echo " email ${var_email}"
+        
     
            }
         }
