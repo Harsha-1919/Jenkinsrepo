@@ -5,11 +5,15 @@ pipeline {
      steps {
     
         echo 'Print Build number and current login username'
-     
-		echo "env.BUILD_NUMBER"
-		echo 'env.USERNAME'
+       
+            echo "env.BUILD_NUMBER AS BELOW /n"
+            echo "Build number is ${currentBuild.number}"
 	   echo 'node1'
-           echo " email ${var_email}"
+	 //  echo "env.BUILD_NUMBER"
+	
+		echo " Username is ${env.USERNAME}"
+        echo " email ${var_email}"
+    
            }
         }
     }
