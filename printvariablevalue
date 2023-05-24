@@ -13,7 +13,7 @@ pipeline {
 	 
 	// echo " Username is ${env.USERNAME}"
 	// echo "The ${JOB_NAME} run on ${NODE_NAME}"
-	 echo "BUILD_TRIGGER_BY: ${BUILD_TRIGGER_BY}"
+	// echo "BUILD_TRIGGER_BY: ${BUILD_TRIGGER_BY}"
          echo " email ${var_email}"
     
            }
