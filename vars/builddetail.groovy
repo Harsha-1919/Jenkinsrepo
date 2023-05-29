@@ -1,11 +1,11 @@
 def call (String jobname){
    echo " this is the called function for getting email, login user and current job name"
     
-        echo 'Print Build number and current login username'
+    //    echo 'Print Build number and current login username'
 		
-		wrap([$class: 'BuildUser']) {
-                    diplay_build_user(BUILD_USER)
-                    display_node_name(NODE_NAME)
+//*		wrap([$class: 'BuildUser']) {
+//                    diplay_build_user(BUILD_USER)
+//                    display_node_name(NODE_NAME)  */
        
          //   echo "BUILD_NUMBER AS BELOW "
          //   echo "Build number is ${currentBuild.number}"
