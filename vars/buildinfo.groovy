@@ -1,4 +1,4 @@
-def build_info(String jobname){
+def call (String jobname){
    echo " this is the called function for getting email, login user and current job name"
    
    // echo " email ${var_email}"
