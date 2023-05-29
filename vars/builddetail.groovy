@@ -20,6 +20,6 @@ def call (String jobname){
 	// echo "BUILD_TRIGGER_BY: ${BUILD_TRIGGER_BY}"
         
     
-           }
+       //    }
         
     }
