@@ -8,14 +8,11 @@ def call (String jobname){
 //                    display_node_name(NODE_NAME)  */
        
             echo "BUILD_NUMBER AS BELOW "
-            echo "Build number is ${currentBuild.number}"
-	  
-	    echo " email ${var_email}"
-	echo " current build number is ${currentBuild.number}"
-
-	 	echo " Username is ${env.USER}"
-	 echo "Username using build user is ${USER}"
-	 echo "The ${JOB_NAME} run on ${NODE_NAME}"
+            println "Build number is ${currentBuild.number}"
+	    echo "support email ${var_email}"
+	   echo " Username is ${env.USER}"
+	   echo "Username using build user is ${USER}"
+	   echo "The ${JOB_NAME} run on ${NODE_NAME}"
 	// echo "BUILD_TRIGGER_BY: ${BUILD_TRIGGER_BY}"
         
     
