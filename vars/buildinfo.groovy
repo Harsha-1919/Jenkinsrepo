@@ -1,5 +1,5 @@
 def build_info(String jobname){
-   echo" this is the called function for getting email, login user and current job name"
+   echo " this is the called function for getting email, login user and current job name"
    
    // echo " email ${var_email}"
 	 //  echo "env.BUILD_NUMBER"
