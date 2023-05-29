@@ -1,8 +1,5 @@
-pipeline {
-    agent { label 'masternodes'} 
-    stages {
-     stage ('Stage 1'){
-     steps {
+def call (String jobname){
+   echo " this is the called function for getting email, login user and current job name"
     
         echo 'Print Build number and current login username'
 		
@@ -12,8 +9,8 @@ pipeline {
        
          //   echo "BUILD_NUMBER AS BELOW "
          //   echo "Build number is ${currentBuild.number}"
-	   echo 'node1'
-	    echo " email ${var_email}"
+	//   echo 'node1'
+	  //  echo " email ${var_email}"
 	 //  echo "env.BUILD_NUMBER"
 	 
 	// echo " Username is ${env.USER}"
@@ -24,6 +21,5 @@ pipeline {
         
     
            }
-        }
+        
     }
-}
