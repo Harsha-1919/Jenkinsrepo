@@ -12,7 +12,7 @@ def call (String jobname){
 	    echo "support email ${var_email}"
 	   echo " Username is ${env.USER}"
 	   echo "Username using build user is ${USER}"
-	   echo "The ${JOB_NAME} run on ${NODE_NAME}"
+	   echo "The job : ${JOB_NAME} run on ${NODE_NAME}"
 	// echo "BUILD_TRIGGER_BY: ${BUILD_TRIGGER_BY}"
         
     
