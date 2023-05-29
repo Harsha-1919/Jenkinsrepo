@@ -11,11 +11,11 @@ def call (String jobname){
             echo "Build number is ${currentBuild.number}"
 	  
 	    echo " email ${var_email}"
-	    echo "env.BUILD_NUMBER"
+	echo " current build number is ${currentBuild.number}"
+
 	 	echo " Username is ${env.USER}"
-	 echo "Username using build userid  is ${USER}"
-	 echo " Username is build_user ${env.BUILD_USER}"
-	echo "The ${JOB_NAME} run on ${NODE_NAME}"
+	 echo "Username using build user is ${USER}"
+	 echo "The ${JOB_NAME} run on ${NODE_NAME}"
 	// echo "BUILD_TRIGGER_BY: ${BUILD_TRIGGER_BY}"
         
     
