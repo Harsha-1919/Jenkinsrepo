@@ -7,13 +7,13 @@ def call (String jobname){
 //                    diplay_build_user(BUILD_USER)
 //                    display_node_name(NODE_NAME)  */
        
-         //   echo "BUILD_NUMBER AS BELOW "
-         //   echo "Build number is ${currentBuild.number}"
-	//   echo 'node1'
-	  //  echo " email ${var_email}"
-	 //  echo "env.BUILD_NUMBER"
+            echo "BUILD_NUMBER AS BELOW "
+            echo "Build number is ${currentBuild.number}"
+	  
+	    echo " email ${var_email}"
+	    //echo "env.BUILD_NUMBER"
 	 
-	// echo " Username is ${env.USER}"
+	echo " Username is ${env.USER}"
 	 //echo "Username using build userid  is ${env.BUILD_USER_ID}"
 	 //echo " Username is build_user ${env.BUILD_USER}"
 	// echo "The ${JOB_NAME} run on ${NODE_NAME}"
