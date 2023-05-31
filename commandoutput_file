@@ -1,0 +1,72 @@
+pipeline {
+
+  agent {
+    label 'node1'
+  }
+
+  stages {
+
+    stage('create directory') {
+
+      agent {
+        label 'jenkins'
+      }
+
+      steps {
+
+        script {
+
+          if (fileExists('/home/jenkins/Abhishek')) {
+
+            echo "Directory : Abhishek already exists"
+
+          } else {
+
+            sh 'mkdir -p /home/jenkins/Abhishek'
+
+            echo "Directory : 'Abhishek' created"
+
+          }
+
+        }
+
+      }
+
+    }
+
+    stage('Main') {
+
+      parallel {
+
+        stage('copy file') {
+
+          steps {
+
+            sh 'ls >> command.output'
+
+            //  sh 'ssh jenkins@192.168.194.14 mkdir -p /home/jenkins/Abhishek'
+
+            sh 'scp command.output jenkins@192.168.194.14:/home/jenkins/Abhishek'
+
+          }
+
+        }
+
+        stage('Message') {
+
+          steps {
+
+            echo "The ${JOB_NAME} run on ${NODE_NAME}"
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
