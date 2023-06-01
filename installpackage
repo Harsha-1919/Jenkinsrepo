@@ -1,0 +1,25 @@
+pipeline {
+  agent { label 'masternodes-1'}  //master 
+  stages {
+    stage('Install Package') {
+      steps {
+        script {
+          // Define a function to install the package on node1
+          def installPackage = {
+            sh 'ssh node1@192.168.0.5 "sudo apt update && apt install postgres-contrib -y"'
+          }
+          // Call the function to install the package on node1
+          installPackage()
+        }
+      }
+    }
+    /*stage('Run Task on node1') {
+      steps {
+        script {
+          // Run a task on node1
+          sh 'ssh user@node1 "command-to-run"'
+        }
+      }
+    }*/
+  }
+}
